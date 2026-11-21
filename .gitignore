@@ -1,0 +1,59 @@
+# --- 1. Secrets & API Keys (Critical) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- 2. Standard Python & Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.python-version
+build/
+dist/
+*.egg-info/
+
+# --- 3. Tooling, Linting & Testing ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- 4. Agentic AI State, Memory & Data ---
+# Local vector databases & checkpoints
+*.sqlite
+*.sqlite3
+*.db
+chroma_db/
+faiss_index/
+qdrant_storage/
+.langgraph_api/
+
+# Agent traces, logs & scratchpads
+logs/
+*.log
+traces/
+eval_results/
+*_eval_data.jsonl
+.cache/
+
+# --- 5. AI Coding Assistants & IDEs ---
+# Ignore personal/local AI tool configs (keep shared AGENTS.md tracked)
+.claude/
+CLAUDE.md
+.cursor/
+.cursorignore
+.cursorindexingignore
+.aider*
+.vscode/
+.idea/
+.DS_Store
+
+# --- 6. Added by Ashok ---
+llm_models/
